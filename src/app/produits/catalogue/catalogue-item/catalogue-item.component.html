@@ -1,0 +1,9 @@
+<div class="card" style="width: 18rem;">
+    <img class="card-img-top mt-3" [src]="transform('data:image/jpg;base64,' + product?.image)" alt="Card image cap" width="10px" height="100px">
+    <div class="card-body">
+        <p class="card-title text-center fw-bold">{{product?.nom?.toUpperCase()}} </p>
+        <p class="text-danger text-center fw-bold">{{product?.prix}} </p>
+        <button *ngIf="product.typeProduit=='burger'" class="btn btn-danger btn-sm" (click)="addCart(product)">Ajouter au panier</button>
+        <button class="btn btn-danger btn-sm ms-2" routerLink="/produit/{{product.id}}">Détails</button>
+    </div>
+</div>

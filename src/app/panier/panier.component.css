@@ -1,0 +1,11 @@
+.titre{
+    display: flex;
+    flex-direction: column;
+}
+
+
+.total{
+    float: right;
+    display: flex;
+    align-items: center;
+}
